@@ -1,0 +1,31 @@
+<!--.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad02</title>
+</head>
+<body>
+    <script>
+    let numero = prompt("Ingresa un número: ");
+
+    if(numero % 3 == 0 && numero % 5 == 0){
+        alert("¡El numero es compatible!");
+    }else if(numero % 3 == 0){
+        alert("¡El numero solo es divisible con 3!");
+    } else if (numero % 5 == 0) {
+        alert("¡El numero solo es divisible con 5!");
+    } else {
+        alert("Este numero no es compatible con ninguno de los valores 3 y 5");
+}
+document.write("Números divisibles entre 3 o 5 del 1 al "+numero+"<br>");
+
+for (let i = 1; i <= numero; i++) {
+  if (i % 3 === 0 || i % 5 === 0) {
+    document.write("Número: " + i + "<br>");
+  }
+}
+    </script>
+</body>
+</html>
